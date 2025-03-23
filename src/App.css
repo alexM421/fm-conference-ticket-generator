@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+:root{
+  --neutral-900: #0D082D; 
+  --neutral-700: #4b4869;
+  --neutral-500: #8784A5;
+  --neutral-300: #D1D0D5;
+  --neutral-0: white;
+
+  --orange-700: #E1604F;
+  --orange-500: #F57463;
+  --gradient-01: linear-gradient(90deg, #F37362 0%, #FFF 100%)
+}
+
+/*Text preset*/
+
+.text-preset-1{
+  font-family: "Inconsolata", sans-serif;
+  font-size: 60px;
+  line-height: 110%;
+  letter-spacing: -1px;
+  font-weight: 800;
+}
+
+.text-preset-2{
+  font-family: "Inconsolata", sans-serif;
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 400px){
+  .text-preset-2{
+    font-family: "Inconsolata", sans-serif;
+    font-size: 24px;
+    line-height: 110%;
+    letter-spacing: -1px;
+    font-weight: 700;
+  }
+}
+
+.text-preset-2-mobile{
+  font-family: "Inconsolata", sans-serif;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+.text-preset-3 {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: -1px;
+}
+
+
+@media screen and (max-width: 400px){
+  .text-preset-3 {
+    font-family: "Inconsolata", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 110%;
+    letter-spacing: -1px;
+  }
+}
+
+.text-preset-3-mobile {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 110%;
+  letter-spacing: -1px;
+}
+
+.text-preset-4 {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+}
+
+@media screen and (max-width: 400px){
+  .text-preset-4{
+    font-family: "Inconsolata", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.5px;
+  }
+  
+}
+
+.text-preset-4-mobile {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+}
+
+.text-preset-5-extrabold {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 800; /* ExtraBold */
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: -0.3px;
+}
+
+.text-preset-5 {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: -0.5px;
+}
+
+.text-preset-6 {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+@media screen and (max-width: 400px){
+  .text-preset-6 {
+    font-family: "Inconsolata", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0;
+  }
+  
+}
+.text-preset-6-mobile {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.text-preset-7 {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: -0.2px;
+}
+
+/* Default margin and padding to 0*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Body */
+
+body{
+  background: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  --header-color: var(--neutral-0);
+  --text-color: var(--neutral-300);
+  min-height: 100vh;
+
+}
+
+/*App*/
+
+#app{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding-inline: 12px;
+}
+
+.components{
+  max-width: 891px;
+  margin: auto;
+}
+
+
+.circles, .lg-curve, .sm-curve,.line-pattern{
+  position: fixed;
+  z-index: -1;
+}
+
+.line-pattern{
+  width: 100vw;
+  top: 0px;
+
+}
+
+.circles{
+  width: 217px;
+  height: auto;
+}
+
+.c1{
+  top: -85px;
+  left: 44px;
+}
+
+.c2{
+  bottom: 40vh;
+  right: 20vw;
+}
+
+
+@media  screen and (max-width: 1000px ){
+  .circles{
+    width: 35vw;
+  }
+
+  .c1{
+    top: -12vw;
+  }
+}
+
+.lg-curve{
+  left: -70px;
+  bottom: -40px;
+  width: 825px;
+  height: 476px;
+  
+}
+
+@media  screen and (max-width: 1200px ){
+  .lg-curve{
+    width: 50%;
+    height: auto;
+    left: 0px;
+    opacity: 0.7;
+  }
+}
+
+
+.sm-curve{
+  right: 0px;
+  top: 80px;
+  width: 446px;
+  height: 208px;
+}
+
+@media  screen and (max-width: 1200px ){
+  .sm-curve{
+    width: 30%;
+    height: auto;
+    opacity: 0.7;
+  }
+}
+
+/* Header */
+
+#header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-block: 0px;
+  padding-block: 45px;
+}
+
+#header img{
+  width: 205px;
+  height: 31px;
+}
+
+#header p{
+  color: var(--text-color);
+  text-align: center;
+}
+
+#header h1{
+  color: var(--header-color);
+  text-align: center;
+  margin-top: 59px;
+  margin-bottom: 20px;
+}
+
+#header h1 span{
+  background: var(--gradient-01);
+  /*Chrome and else*/ 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /*Firefox */
+  background-clip: text;
+  color: transparent;
+}
+
+#header p span{
+  color: var(--orange-500)
+}
+
+/*Form */
+
+#form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  max-width: 460px;
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info-text{
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  gap: 8px;
+}
+
+.info-text img{
+  width: 16px;
+  height: 16px;
+}
+
+.info{
+  color: var(--text-color);
+}
+
+label{
+  color: var(--header-color);
+  display: block;
+  margin-bottom: 12px;
+}
+
+
+input{
+  width: 100%;
+  height: 54px;
+  background-color: rgba(255 255 255/ 8%);
+  border-radius: 12px;
+  border: 1px solid var(--neutral-500);
+  padding: 0 16px;
+  color: var(--text-color);
+}
+
+input:hover{
+  cursor: pointer;
+  background-color: rgba(255 255 255/20%);
+}
+
+input:focus{
+  background-color: rgba(255 255 255/ 8%);
+  outline: 2px solid var(--neutral-500);
+  outline-offset: 2px;
+}
+
+input[type="file"]{
+  display: none;
+
+}
+
+.file-input{
+  width: 100%;
+  height: 126px;
+  background-color: rgba(255 255 255/ 8%);
+  border-radius: 12px;
+  border: 1px dashed var(--neutral-500);
+  padding: 0 16px;
+  color: var(--neutral-500);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-input-hover:hover{
+    cursor: pointer;
+    background-color: rgba(255 255 255/20%);
+  
+}
+
+.file-input-hover:active{
+  background-color: rgba(255 255 255/ 8%);
+  outline: 2px solid var(--neutral-500);
+  outline-offset: 2px;
+}
+
+.cloud-icon{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border: 1px solid var(--neutral-500);
+  background-color: rgba(255 255 255/ 10%);
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.cloud-icon img{
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  color: var(--orange-500);
+}
+
+.file-label{
+  margin-bottom: 12px;
+  color: var(--header-color);
+}
+
+input::placeholder{
+  color: var(--text-color)
+}
+
+/*Handle avatar */
+
+.avatar-input{
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar-labels{
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+
+}
+
+.avatar{
+  border: 1px solid var(--neutral-500);
+  border-radius: 12px;
+  width: 50px;
+  height: 50px;
+}
+
+.avatar-options{
+  background-color: rgba(255 255 255/ 10%);
+  color: var(--neutral-0);
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-bottom: 0;
+}
+
+.avatar-options:hover{
+  cursor: pointer;
+  color: var(--neutral-300);
+  text-decoration: underline;
+}
+
+form button[type="submit"]{
+  cursor: pointer;
+  height: 54px;
+  background-color: var(--orange-700);
+  color: var(--neutral-900);
+  border-radius: 12px;
+  border: none;
+}
+
+form button[type="submit"]:hover{
+  box-shadow: 0px 5px 0 var(--orange-500);
+}
+
+form button[type="submit"]:focus{
+  box-shadow: none;
+  outline: 2px solid var(--neutral-300);
+  outline-offset: 2px;
+}
+
+
+/** Error Icon **/
+
+.error-div{
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  color: var(--orange-500);
+  gap: 8px;
+}
+
+.error-icon{
+  width: 16px;
+  height: 16px;
+}
+
+.invalid{
+  border: 1px solid var(--orange-500);
+}
+
+/*Ticket*/
+
+.ticket{
+  width: 600px;
+  height: 280px;
+  margin: auto;
+  background-image: url("ticket bg.svg");
+  margin-top: 112px;
+  position: relative;
+}
+
+#ticket-number{
+
+  color: var(--neutral-500);
+  position: absolute;
+  transform: rotate(90deg);
+  right: 20px;
+  top: 120px;
+}
+
+#ticket-logo{
+  position: absolute;
+  top: 24px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+}
+
+#ticket-place{
+  position: absolute;
+  top: 16px;
+  left: 84px;
+}
+
+#ticket-place h2{
+  color: var(--neutral-0);
+
+}
+
+#ticket-place p{
+  color: var(--neutral-300)
+}
+
+#ticket-avatar{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  left: 30px;
+  bottom: 24px;
+}
+
+#ticket-name{
+  position: absolute;
+  left: 126px;
+  bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#ticket-name p{
+  color: var(--neutral-0);
+}
+
+#ticket-git{
+  display: flex;
+  gap: 10px;
+}
+
+#ticket-git img{
+  width: 22px;
+  height: 22px;
+}
+
+#ticket-git p{
+  color: var(--neutral-300)
+}
