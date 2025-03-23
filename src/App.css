@@ -164,7 +164,7 @@
 /* Body */
 
 body{
-  background: url("background.jpg");
+  background: url("/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
