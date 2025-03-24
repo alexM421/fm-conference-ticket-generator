@@ -507,7 +507,7 @@ form button[type="submit"]:focus{
   width: 600px;
   height: 280px;
   margin: auto;
-  background-image: url("ticket bg.svg");
+  background-image: url("/ticket bg.svg");
   margin-top: 112px;
   position: relative;
 }
